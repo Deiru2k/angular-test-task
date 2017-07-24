@@ -1,7 +1,8 @@
 <li>
   <div class="item">
     <span *ngIf="!isEditOpen">
-      {{item}} <button (click)="onEditClick()">Edit</button><button (click)="onRemoveClick()">&times;</button>
+      <span class="editableItem" (click)="onEditClick()">{{item}}</span>
+      <button (click)="onEditClick()">Edit</button><button (click)="onRemoveClick()">&times;</button>
     </span>
     <span *ngIf="isEditOpen">
       <br />

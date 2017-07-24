@@ -6,6 +6,10 @@
   display: inline-block;
 }
 
+.editableItem {
+  cursor: pointer;
+}
+
 .item > * > button {
   margin-left: 5px;
   margin-right: 5px;
