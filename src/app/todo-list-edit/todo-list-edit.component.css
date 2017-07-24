@@ -1,0 +1,15 @@
+.edit {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.edit > button {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.edit > input {
+  margin-right: 5px;
+}

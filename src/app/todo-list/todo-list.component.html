@@ -1,0 +1,14 @@
+<div>
+  <span *ngIf="!isAddOpen">
+    <button (click)="onAddClick()">Add item</button>
+  </span>
+  <div *ngIf="isAddOpen">
+    <todo-list-edit [value]="" [saveLabel]="'Add'" (onCancel)="onAddClick()" (onEdit)="addItem($event)"></todo-list-edit>
+  </div>
+  <h1>ToDo List</h1>
+  <h3 *ngIf="items.length === 0">Click "Add item" button above!</h3>
+  <ul class="list">
+    <todo-list-item *ngFor="let item of items; index as i" [item]="item" [index]="i" (onRemove)="removeItem($event)" (onEdit)="replaceItem($event[0], $event[1])">
+    </todo-list-item> 
+  <ul>
+<div>

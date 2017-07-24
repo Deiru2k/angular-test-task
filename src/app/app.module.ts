@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms'
 
 import { AppComponent } from './app.component';
-import { TodoListComponent } from './TodoList.component'
-import { AdderComponent } from './Adder/Adder.component';
+import { TodoListComponent } from './todo-list/todo-list.component'
+import { AdderComponent } from './adder/adder.component';
+import { TodoListItemComponent } from './todo-list-item/todo-list-item.component';
+import { TodoListEditComponent } from './todo-list-edit/todo-list-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     AdderComponent,
+    TodoListItemComponent,
+    TodoListEditComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent, TodoListComponent, AdderComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

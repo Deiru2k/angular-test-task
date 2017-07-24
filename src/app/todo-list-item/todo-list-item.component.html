@@ -1,0 +1,11 @@
+<li>
+  <div class="item">
+    <span *ngIf="!isEditOpen">
+      {{item}} <button (click)="onEditClick()">Edit</button><button (click)="onRemoveClick()">&times;</button>
+    </span>
+    <span *ngIf="isEditOpen">
+      <br />
+      <todo-list-edit [value]="item" (onCancel)="onEditClick()" (onEdit)="onSaveClick($event)"></todo-list-edit>
+    </span>
+  </div>
+</li>
